@@ -1,0 +1,4 @@
+SQLAlchemy
+aiohttp
+beautifulsoup4
+psycopg2-binary
