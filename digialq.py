@@ -42,26 +42,6 @@ def write_rows(rows, sessin_db):
                         visitor[8],
                         visitor[9]))
         session_db.commit()
-        # with session_db.query(Visitor).filter_by(id=int(visitor[2])).first() as exist_visitor:
-        #     exist_visitor.status = visitor[0].strip()
-        #     exist_visitor.num_in_day = int(visitor[1])
-        #     exist_visitor.id = int(visitor[2])
-        #     exist_visitor.work_place = visitor[3].strip()
-        #     exist_visitor.name_service = visitor[5].strip()
-        #     exist_visitor.reg_time = visitor[7]
-        #     exist_visitor.start_time = visitor[8]
-        #     exist_visitor.finish_time = visitor[9]
-
-        # session_db.add(Visitor(visitor[0].strip(),
-        #                 int(visitor[1]),
-        #                 int(visitor[2]),
-        #                 visitor[3].strip(),
-        #                 visitor[5].strip(),
-        #                 visitor[7],
-        #                 visitor[8],
-        #                 visitor[9]))
-        # #print(visitor[3].strip())
-        # session_db.commit()
 
 async def get_and_write(session_db):
     async with aiohttp.ClientSession() as session:
