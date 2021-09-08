@@ -1,5 +1,3 @@
-# from config import login_pg, pass_pg, host_pg
-
 from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey
 from sqlalchemy.orm.session import Session
 from sqlalchemy.sql import visitors
